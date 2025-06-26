@@ -1,0 +1,332 @@
+﻿@* @{ *@
+@*     ViewData["Title"] = "Home Page"; *@
+@* } *@
+
+@* <div class="text-center"> *@
+@*     <h1 class="display-4">Welcome</h1> *@
+@*     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+@* </div> *@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapil A Lund | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/styles.css">
+    <link rel="icon" href="~/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div id="top"></div>
+    <!-- Header with Introduction -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img class="personalPic" src="~/assets/kapsPic.jpg" alt="Kapil" id="profile-img">
+                </div>
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight">Kapil Arjandas Lund</span></h1>
+                    <h2>Fullstack .NET Developer</h2>
+                    <p class="intro-text">I create beautiful, functional websites and applications with a focus on user experience and clean code.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/kaps2607" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kapil-lund/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/9373978282?text=Hello Kapil" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:kapillund29@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Info Bar -->
+    <section class="contact-bar">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>kapillund29@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 93739 78282</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Mumbai, India</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate aspiring full-stack .NET developer currently working as a software engineer. My journey into tech started with curiosity and self-learning, and since then, I've built several projects using C#, ASP.NET Core, Angular, and SQL. I enjoy turning ideas into real, working web applications</p>
+                    <p>When I am not coding, I enjoy exploring new technologies, learning design tricks, or spending quality time with my joint family</p>
+                    <div class="resume-download">
+                        <a href="~/assets/Kapil Lund Profile.pdf" class="btn" download>Download Resume</a>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h4>Frontend</h4>
+                            <ul>
+                                <li>HTML5 & CSS3</li>
+                                <li>JavaScript (ES6+)</li>
+                                <li>Angular</li>
+                                <!-- <li>Vue.js</li> -->
+                                <li>Responsive Design</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Backend</h4>
+                            <ul>
+                                <li>C#</li>
+                                <li>ASP.NET Core</li>
+                                <!-- <li>Python</li> -->
+                                <li>MongoDB</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Tools</h4>
+                            <ul>
+                                <li>Git & GitHub</li>
+                                <li>VS Code</li>
+                                <li>Figma</li>
+                                <!-- <li>Webpack</li> -->
+                                <li>Docker</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">Apps</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="~/assets/AdEx_Logo.jpeg" alt="Project 1">
+                        <div class="project-links">
+                            <!-- <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a> -->
+                            <a href="https://github.com/kaps2607/AdExcellence" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AdExcellence</h3>
+                        <p>A web-based platform that connects advertisers with hoarding owners, streamlining outdoor ad bookings, campaign management, and real-time analytics with a secure and efficient backend.</p>
+                        <div class="project-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="~/assets//auctionHub_Logo.png" alt="Project 2">
+                        <div class="project-links">
+                            <!-- <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a> -->
+                            <a href="./not-on-github.html" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Auction Hub</h3>
+                        <p>It is a full-stack auction platform built with HTML, CSS, JavaScript, .NET, and MySQL. It offers a seamless user experience through efficient bidding and real-time updates, demonstrating expertise in both front-end and back-end development.</p>
+                        <div class="project-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">ASP.NET Core</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="~/assets/portfolio_Logo.png" alt="Project 3">
+                        <div class="project-links">
+                            <a href="#top" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio</h3>
+                        <p>My portfolio website is a personal platform showcasing my skills, projects, and experience as a developer, providing an interactive and professional way for recruiters and clients to learn about my work.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML & CSS</span>
+                            <span class="tag">JS</span>
+                            <span class="tag">Design System</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <!-- <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 4">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Custom portfolio website with animated transitions.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">GSAP</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title">My Experience</h2>
+            <div class="resume-container">
+                <div class="resume-column">
+                    <h3 class="resume-column-title">Education</h3>
+                    <div class="resume-item">
+                        <h4>BSc. in Information Technology Degree</h4>
+                        <span class="resume-date">2021 - 2024</span>
+                        <span class="resume-location">Mumbai University</span>
+                        <p>Specialized in Web Technologies and Human-Computer Interaction.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Fullstack Java Certification Course</h4>
+                        <span class="resume-date">2024</span>
+                        <span class="resume-location">Quastech, Thane</span>
+                        <p>Intensive 30-week program focused on full-stack Java development.</p>
+                    </div>
+                </div>
+                <div class="resume-column">
+                    <h3 class="resume-column-title">Experience</h3>
+                    <div class="resume-item">
+                        <h4>Fullstack Software Developer</h4>
+                        <span class="resume-date">2025 - Present</span>
+                        <span class="resume-location">NeoSOFT Pvt. Ltd.</span>
+                        <p>Lead developer for customer-facing applications using C#, ASP.NET, Angular and TypeScript.</p>
+                    </div>
+                    <!-- <div class="resume-item">
+                        <h4>Web Designer</h4>
+                        <span class="resume-date">2018 - 2020</span>
+                        <span class="resume-location">Digital Agency</span>
+                        <p>Designed and developed websites for clients across various industries.</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out for job opportunities, collaborations, or just to say hello!</p>
+                    <ul class="contact-details">
+                        <li><i class="fas fa-envelope"></i> kapillund29@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +91 93739 78282</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                    </ul>
+                    <div class="contact-social">
+                        <a href=""><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kapil-lund/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/9373978282?text=Hello Kapil" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:kapillund29@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <!-- <form action="https://formsubmit.co/kapillund29@gmail.com" method="POST" class="contact-form"> -->
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <div id="form-status-message" class="status-message" style="display:none; color: green; margin-top: 1rem;"></div>
+                    <!-- <button type="submit" class="btn btn-block">Send Message</button> -->
+                    <button type="submit" class="btn" id="sendBtn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-spinner" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>Kapil Arjandas Lund</span>
+                    <p>Fullstack .NET Developer</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/kaps2607" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kapil-lund/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/9373978282?text=Hello Kapil" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:kapillund29@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Kapil Arjandas Lund. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/script.js"></script>
+</body>
+</html>
