@@ -660,6 +660,59 @@ img {
     font-size: 0.9rem;
 }
 
+.services-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+    .service-item:hover {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.service-icon {
+    font-size: 2em;
+    color: #007bff;
+    margin-right: 20px;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.service-text h3 {
+    font-size: 1.2em;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.service-text p {
+    font-size: 0.95em;
+    color: #555;
+    margin: 0;
+}
+
+
 /* Responsive Design */
 @media (max-width: 992px) {
     .hero-content {
